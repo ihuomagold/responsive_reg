@@ -1,1 +1,1 @@
-# responsive_reg
+# This is a single responsive registeration page.

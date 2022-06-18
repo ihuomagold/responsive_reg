@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('/bg-intro-desktop.png');
+    background-color: hsl(0, 100%, 74%);
+    min-height: 100vh;
+    font-size: 16px;
+    display: inline-flex;
+}
+main{
+    display: grid;
+    grid-template-areas: 
+    'a b'
+    'a c'
+    ;
+    width: 50%;
+    margin: auto;
+    gap: 10px;
+}
+.write{
+    place-items: center;
+    grid-area: a;
+}
+.write h1{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-top: 30%;
+}
+.write p{
+    color: hsl(247, 23%, 92%);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.trial{
+    grid-area: b;
+}
+
+.form{
+    background-color: white;
+    grid-area: c;
+    margin: auto;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+input[type="text"],
+textarea,
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+.trial p{
+    background-color: hsl(248, 32%, 49%);
+    padding: 10px;
+    border-radius: 5px;
+}

@@ -8,7 +8,7 @@ html{
     width: auto;
 }
 body{
-    background-image: url('responsive_reg/bg-intro-desktop.png');
+    background-image: url('./bg-intro-desktop.png');
     background-color: hsl(0, 100%, 74%);
     font-size: 16px;
     max-width: 1440px;

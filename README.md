@@ -1,1 +1,1 @@
-# This is a single responsive registeration page.
+# This is a single responsive registration page.

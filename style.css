@@ -3,63 +3,61 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    height: 100%;
+    width: auto;
+}
 body{
     background-image: url('/bg-intro-desktop.png');
     background-color: hsl(0, 100%, 74%);
-    min-height: 100vh;
     font-size: 16px;
-    display: inline-flex;
+    max-width: 1440px;
 }
 main{
     display: grid;
-    grid-template-areas: 
-    'a b'
-    'a c'
-    ;
-    width: 50%;
-    margin: auto;
+    grid-template-columns: 50% 50%; 
+    height: 100vh;
+    align-items: center;
+    padding: 100px;
     gap: 10px;
+    font-family: 'Poppins', sans-serif;
 }
-.write{
-    place-items: center;
-    grid-area: a;
-}
+
 .write h1{
     color: white;
-    font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    margin-top: 30%;
 }
-.write p{
+.write h5{
     color: hsl(247, 23%, 92%);
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
-.trial{
-    grid-area: b;
-}
 
-.form{
+
+form{
     background-color: white;
-    grid-area: c;
     margin: auto;
     padding: 1em;
     border-radius: 5px;
+    box-shadow: 0 5px rgba(181, 99, 103, 0.5);
 }
 
-input[type="text"],
-textarea,
-input[type="email"],
-input[type="password"] {
+input, button{
   width: 100%;
   padding: 10px;
-  border: 1px solid;
+  border-width: 1px;
   border-radius: 4px;
+  border-color: hsl(87, 52%, 92%);
+  border-style: solid;
   box-sizing: border-box;
-  margin-top: 10px;
+  outline: none;
+  margin-bottom: 10px;
 }
-.trial p{
+.trial {
     background-color: hsl(248, 32%, 49%);
     padding: 10px;
     border-radius: 5px;
+    box-shadow: 0 5px rgba(181, 99, 103, 0.5);
+    border: none;
+    color: white;
 }

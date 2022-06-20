@@ -6,55 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Form</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
-      <div class="null"></div>
       <div class="write">
         <h1>Learn to code by watching others</h1>
-        <p>
+        <h5>
           See how experienced developers solve problems in real-time. Watching
           scripted tutorials is great, but understanding how developers think is
           invaluable.
-        </p>
+        </h5>
       </div>
-      <div class="trial">
-        <p><a href="">Try it free 7 days</a> $20/mo. thereafter</p>
-      </div>
-      <div class="form">
-        <form action="">
-          <input
-            type="text"
-            name="firstname"
-            placeholder="First Name"
-            required
-          />
-          <br />
-          <input type="text" name="lastname" placeholder="Last Name" required />
-          <br />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            required
-          />
-          <br />
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            required
-          />
-          <br />
-          <button type="submit" class="reg_btn">CLAIM YOUR FREE TRIAL</button>
-          <br />
-          <p>
-            By clicking the button, you are agreeing to our
-            <a href="">Terms and Services</a>.
-          </p>
-        </form>
+      <div class="form_area">
+        <button type="submit" class="trial">
+          Try it free 7 days<span> $20/mo. thereafter</span>
+        </button>
+        <div class="form">
+          <form action="">
+            <div class="entry" data-error="First Name cannot be empty">
+              <i href="icon-error.svg"></i>
+            <input
+              type="text"
+              name="firstname"
+              placeholder="First Name"
+              required
+            />
+          </div>
+          <div class="entry" data-error="Last Name cannot be empty">
+            <i href="icon-error.svg"></i>
+            <input
+              type="text"
+              name="lastname"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+          <div class="entry" data-error="Looks like this is not an email">
+            <i href="icon-error.svg"></i>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+          <div class="entry" data-error="Password cannot be empty">
+            <i href="icon-error.svg"></i>
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+            <button type="submit" value="submit" class="reg_btn">CLAIM YOUR FREE TRIAL</button>
+            <br />
+            <h6>
+              By clicking the button, you are agreeing to our
+              <span>Terms and Services</span>.
+            </h6>
+          </form>
+        </div>
       </div>
     </main>
   </body>

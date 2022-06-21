@@ -8,7 +8,7 @@ html{
     width: auto;
 }
 body{
-    background-image: url('/bg-intro-desktop.png');
+    background-image: url('bg-intro-desktop.png');
     background-color: hsl(0, 100%, 74%);
     font-size: 16px;
     max-width: 1440px;
@@ -22,7 +22,9 @@ main{
     gap: 10px;
     font-family: 'Poppins', sans-serif;
 }
-
+.write{
+    padding: 80px;
+}
 .write h1{
     color: white;
     font-weight: 700;
@@ -33,13 +35,13 @@ main{
     font-weight: 400;
 }
 
-
 form{
     background-color: white;
     margin: auto;
     padding: 1em;
     border-radius: 5px;
     box-shadow: 0 5px rgba(181, 99, 103, 0.5);
+    font-family: 'Poppins', serif;
 }
 
 input, button{
@@ -52,6 +54,8 @@ input, button{
   box-sizing: border-box;
   outline: none;
   margin-bottom: 10px;
+  font-family: 'Poppins', serif;
+  font-weight: 600;
 }
 .trial {
     background-color: hsl(248, 32%, 49%);
@@ -60,4 +64,41 @@ input, button{
     box-shadow: 0 5px rgba(181, 99, 103, 0.5);
     border: none;
     color: white;
+}
+.trial span{
+    font-weight: 400;
+}
+
+.form form input:focus {
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsl(249, 10%, 26%);
+}
+
+.entry[data-error] .input{
+    border-color: hsl(355, 70%, 46%);
+    color: hsl(355, 70%, 46%);
+    background: url(/icon-error.svg) no-repeat scroll 7px 7px;
+    background-position: 95% 50%;
+}
+
+.entry-field[data-error]::after {
+    content: attr(data-error);
+    font-size: 0.5em;
+    color: hsl(0, 100%, 74%);
+    display: flex;
+    justify-content: flex-end;
+    font-style: italic;
+}
+
+.reg_btn{
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: white;
+    box-shadow: 0 3px rgb(55,181,125);
+}
+.form_area{
+    width: 90%;
 }

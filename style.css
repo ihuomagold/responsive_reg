@@ -28,6 +28,8 @@ main{
 .write h1{
     color: white;
     font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 .write h5{
     color: hsl(247, 23%, 92%);
@@ -38,7 +40,7 @@ main{
 form{
     background-color: white;
     margin: auto;
-    padding: 1em;
+    padding: 2em;
     border-radius: 5px;
     box-shadow: 0 5px rgba(181, 99, 103, 0.5);
     font-family: 'Poppins', serif;
@@ -59,11 +61,12 @@ input, button{
 }
 .trial {
     background-color: hsl(248, 32%, 49%);
-    padding: 10px;
+    padding: 20px;
     border-radius: 5px;
     box-shadow: 0 5px rgba(181, 99, 103, 0.5);
     border: none;
     color: white;
+    margin-bottom: 20px;
 }
 .trial span{
     font-weight: 400;
@@ -78,7 +81,7 @@ input, button{
 .entry[data-error] .input{
     border-color: hsl(355, 70%, 46%);
     color: hsl(355, 70%, 46%);
-    background: url(/icon-error.svg) no-repeat scroll 7px 7px;
+    background: url(./icon-error.svg) no-repeat scroll 7px 7px;
     background-position: 95% 50%;
 }
 
@@ -98,7 +101,23 @@ input, button{
     font-weight: 500;
     color: white;
     box-shadow: 0 3px rgb(55,181,125);
+    
+}
+.reg_btn:hover{
+    background-color: #77e2b4;
+    cursor: pointer;
 }
 .form_area{
     width: 90%;
+}
+
+h6{
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+    font-size: 0.58rem;
+    font-weight: 500;
+}
+h6 span{
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
 }

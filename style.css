@@ -8,6 +8,8 @@ html{
     width: auto;
 }
 body{
+    background: no-repeat;
+    background-size: cover;
     background-image: url('./bg-intro-desktop.png');
     background-color: hsl(0, 100%, 74%);
     font-size: 16px;
@@ -78,7 +80,7 @@ input, button{
     border-color: hsl(249, 10%, 26%);
 }
 
-.entry[data-error] .input{
+.entry[data-error].input{
     border-color: hsl(355, 70%, 46%);
     color: hsl(355, 70%, 46%);
     background: url(./icon-error.svg) no-repeat scroll 7px 7px;
@@ -120,4 +122,34 @@ h6{
 h6 span{
     color: hsl(0, 100%, 74%);
     font-weight: 700;
+}
+
+/*Media Query*/
+
+@media (max-width: 700px){
+    main{
+        display: flex;
+        flex-direction: column;
+        background: no-repeat;
+        background-image: url(./bg-intro-mobile.png);
+        background-color: hsl(0, 100%, 74%);
+        background-size: cover;
+        height: auto;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+        padding: 10px;
+    }
+    .write{
+        padding: 10px;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .write h1{
+        font-size: 1.7em;
+    }
+    .write h5{
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+    
 }

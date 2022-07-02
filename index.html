@@ -30,41 +30,23 @@
           <form action="">
             <div class="entry" data-error="First Name cannot be empty">
               <i href="icon-error.svg"></i>
-            <input
-              type="text"
-              name="firstname"
-              placeholder="First Name"
-  
-            />
-          </div>
-          <div class="entry" data-error="Last Name cannot be empty">
-            <i href="icon-error.svg"></i>
-            <input
-              type="text"
-              name="lastname"
-              placeholder="Last Name"
-              
-            />
-          </div>
-          <div class="entry" data-error="Looks like this is not an email">
-            <i href="icon-error.svg"></i>
-            <input
-              type="email"
-              name="email"
-              placeholder="Email Address"
-            
-            />
-          </div>
-          <div class="entry" data-error="Password cannot be empty">
-            <i href="icon-error.svg"></i>
-            <input
-              type="password"
-              name="password"
-              placeholder="Password"
-            
-            />
-          </div>
-            <button type="submit" value="submit" class="reg_btn">CLAIM YOUR FREE TRIAL</button>
+              <input type="text" name="firstname" placeholder="First Name" />
+            </div>
+            <div class="entry" data-error="Last Name cannot be empty">
+              <i href="icon-error.svg"></i>
+              <input type="text" name="lastname" placeholder="Last Name" />
+            </div>
+            <div class="entry" data-error="Looks like this is not an email">
+              <i href="icon-error.svg"></i>
+              <input type="email" name="email" placeholder="Email Address" />
+            </div>
+            <div class="entry" data-error="Password cannot be empty">
+              <i href="icon-error.svg"></i>
+              <input type="password" name="password" placeholder="Password" />
+            </div>
+            <button type="submit" value="submit" class="reg_btn">
+              CLAIM YOUR FREE TRIAL
+            </button>
             <h6>
               By clicking the button, you are agreeing to our
               <span>Terms and Services</span>.
@@ -73,5 +55,13 @@
         </div>
       </div>
     </main>
+
+    <script>
+      document.querySelectorAll(".long[data-error] .input").forEach((inpEl) => {
+        inpEl.addEventListener("input", () =>
+          inpEl.parentElement.removeAttribute("data-error")
+        );
+      });
+    </script>
   </body>
 </html>
